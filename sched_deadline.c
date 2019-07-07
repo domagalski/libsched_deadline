@@ -51,7 +51,7 @@ void *run_sched_deadline(void *data)
     struct sched_attr attr;
     int ret;
     unsigned int flags = 0;
-    deadline_func_args *args = (deadline_func_args *)data;
+    deadline_function *args = (deadline_function *)data;
 
     // setup SCHED_DEADLINE
     attr.size = sizeof(attr);

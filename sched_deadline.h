@@ -49,7 +49,7 @@ typedef struct {
     int retval;
     int (*function)(void **args);
     void **func_args;
-} deadline_func_args;
+} deadline_function;
 
 // wrap syscall to sched_setattr
 int sched_setattr(pid_t pid, const struct sched_attr *attr, unsigned int flags);
